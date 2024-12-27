@@ -37,6 +37,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    background-color: #010008;
 }
 
 .nav-links {
@@ -46,7 +47,7 @@ nav {
 }
 
 a {
-    color: black;
+    color: #56D1EC;
     text-decoration: none;
     text-decoration-color: white;
  }
@@ -60,6 +61,7 @@ a {
 
  .logo {
     font-size: 2rem;
+    color: #56D1EC;
  }
 
  .logo:hover {
@@ -146,6 +148,18 @@ a {
     transform: none;   
 }
 
+/*MAIN*/
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #010008;      
+    /*background-image: url(/assets/jaguar.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* SECTIONS */
 
 section {
@@ -179,10 +193,12 @@ section {
 .section__text {
     align-self: center;
     text-align: center;
+    color: white;
 }
 
 .section__text p {
     font-weight: 600;   
+    color: #56D1EC;
 }
 
 .section__text__p1 {
@@ -197,7 +213,15 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    
 }
+
+.title2 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
 
 #socials-container {
     display: flex;
@@ -210,7 +234,7 @@ section {
 
 .icon {
     cursor: pointer;
-    height: 2rem;
+    height: 2.5rem;
 }
 
 /* BUTTONS */
@@ -241,7 +265,7 @@ section {
 
 .btn-color-1, 
 .btn-color-2:hover {
-    background: rgb(53,53,53);
+    background: #56D1EC;
     color: white;
 }
 
@@ -250,11 +274,11 @@ section {
 }
 
 .btn-color-2 {
-    background: none;
+    background: white;
 }
 
 .btn-color-2:hover {
-    border: rgb(255,255,255) 0.1rem solid;
+    border: white(255,255,255) 0.1rem solid;
 }
 
 .btn-container {
@@ -365,6 +389,33 @@ article .icon {
   }
   
   .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .project-title {
+    margin: 1rem;
+    color: black;
+  }
+  
+  .project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+
+  /* CERTIFICATIONS SECTION */
+
+#certifications {
+    position: relative;    
+  }
+
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+  }
+  
+  .cert-img {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
